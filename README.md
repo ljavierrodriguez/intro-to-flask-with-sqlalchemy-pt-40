@@ -30,7 +30,7 @@ db = SQLAlchemy()
 
 ```python
 import os
-from flask import Flask
+from flask import Flask, jsonify
 from flask_migrate import Migrate
 from flask_cors import CORS
 from dotenv import load_dotenv
