@@ -15,7 +15,11 @@ pipenv shell
 pipenv install flask flask-migrate flask-sqlalchemy flask-cors python-dotenv psycopg2-binary
 ```
 
-5. Crear el archivo ***.env*** en la carpeta principal
+5. Crear el archivo ***.env*** en la carpeta principal y agregar el siguiente contenido:
+
+```env
+DATABASEURI="postgresql+psycopg2://postgres:postgres@localhost:5432/<database>"
+```
 
 6. Crear la carpeta ***src/*** y dentro crear dos archivos uno llamado ***app.py*** y un archivo llamado ***models.py***
 
