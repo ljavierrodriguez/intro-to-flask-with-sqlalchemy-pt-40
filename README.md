@@ -30,7 +30,7 @@ db = SQLAlchemy()
 
 ```python
 import os
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_migrate import Migrate
 from flask_cors import CORS
 from dotenv import load_dotenv
@@ -40,9 +40,7 @@ from models import db
 9. Cargar las variables de entorno del archivo ***.env***
 
 ```python
-...
 load_dotenv() # cargar las variables de entorno
-...
 ```
 
 10. Instanciar una variable de Flask
